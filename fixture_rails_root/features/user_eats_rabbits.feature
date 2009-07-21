@@ -11,7 +11,7 @@ Feature: User eats a Rabbit
 
   Scenario: eat a baby rabbit
     Given there is a rabbit
-    And the rabbit is still a baby
+    And the rabbit is still a "baby"
     When I eat the rabbit
     Then I should still be hungry
 
