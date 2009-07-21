@@ -8,6 +8,7 @@ app/views/features/index.html.erb
 app/views/features/show.html.erb
 app/views/layouts/courgette.html.erb
 config/routes.rb
+courgette.gemspec
 features/list_features.feature
 features/show_feature.feature
 features/step_definitions/courgette_steps.rb
