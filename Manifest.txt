@@ -10,12 +10,9 @@ app/views/layouts/courgette.html.erb
 config/routes.rb
 features/list_features.feature
 features/show_feature.feature
-features/step_definitions/email_steps.rb
-features/step_definitions/general_steps.rb
-features/step_definitions/sign_up_steps.rb
+features/step_definitions/courgette_steps.rb
 features/step_definitions/webrat_steps.rb
 features/support/env.rb
-features/support/paths.rb
 fixture_rails_root/README
 fixture_rails_root/Rakefile
 fixture_rails_root/app/controllers/application_controller.rb
@@ -46,6 +43,7 @@ fixture_rails_root/features/support/paths.rb
 fixture_rails_root/features/user_eats_rabbits.feature
 fixture_rails_root/features/visitor_transforms.feature
 fixture_rails_root/lib/tasks/cucumber.rake
+fixture_rails_root/log/test.log
 fixture_rails_root/public/404.html
 fixture_rails_root/public/422.html
 fixture_rails_root/public/500.html
