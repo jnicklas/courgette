@@ -5,9 +5,11 @@ README.rdoc
 Rakefile
 app/controllers/features_controller.rb
 app/views/features/index.html.erb
+app/views/features/show.html.erb
 app/views/layouts/courgette.html.erb
 config/routes.rb
 features/list_features.feature
+features/show_feature.feature
 features/step_definitions/email_steps.rb
 features/step_definitions/general_steps.rb
 features/step_definitions/sign_up_steps.rb
