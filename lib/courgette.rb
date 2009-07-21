@@ -3,6 +3,7 @@ $:.unshift(File.dirname(__FILE__)) unless
 
 require 'cucumber'
 require 'cucumber/feature_file'
+require 'cucumber/formatter/html'
 
 module Courgette
   VERSION = '0.0.1'

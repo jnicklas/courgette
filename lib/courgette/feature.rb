@@ -20,6 +20,13 @@ module Courgette
       relative_path.sub(/^\//, '').sub(/\.feature$/, '').parameterize.dasherize.to_s
     end
     
+    def to_html
+      step_mother = Object.new
+      step_mother.extend(Cucumber::StepMother)
+      visitor = Cucumber::Formatter::Html.new(step_mother, nil, {})
+      visitor.visit_feature(ast)
+    end
+    
   private
   
     def relative_path

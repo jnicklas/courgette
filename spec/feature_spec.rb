@@ -24,4 +24,10 @@ describe Courgette::Feature do
     end
   end
   
+  describe '#to_html' do
+    it "should not raise any errors" do
+      lambda { @feature.to_html }.should_not raise_error
+    end
+  end
+  
 end
