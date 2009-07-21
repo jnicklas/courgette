@@ -10,10 +10,19 @@ module Courgette
   autoload :Feature, 'courgette/feature'
   
   class << self
-    def features(root)
-      Dir.glob(File.join(root, '**/*.feature')).map do |file|
+    def features
+      Dir.glob(File.join(feature_root, '**/*.feature')).map do |file|
         Courgette::Feature.new(file)
       end
     end
+    
+    def find(param)
+      features.find { |f| f.to_param == param }
+    end
+
+    def feature_root
+      Rails.root.join('features').to_s
+    end
+
   end
 end

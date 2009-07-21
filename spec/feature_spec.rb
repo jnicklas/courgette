@@ -18,4 +18,10 @@ describe Courgette::Feature do
     end
   end
   
+  describe '#to_param' do
+    it "should return the feature's path, relative to feature_root, parameterized and without extension" do
+      @feature.to_param.should == 'user-eats-rabbits'
+    end
+  end
+  
 end
