@@ -944,3 +944,108 @@ Rendering features/index
 
 
 Processing ApplicationController#index (for 127.0.0.1 at 2009-07-21 20:05:57) [GET]
+
+
+Processing FeaturesController#show (for 0.0.0.0 at 2009-07-21 20:11:38) [GET]
+  Parameters: {"id"=>"user_eats_rabbit"}
+Rendering template within layouts/courgette
+Rendering features/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/features/user_eats_rabbit]
+
+
+Processing FeaturesController#show (for 0.0.0.0 at 2009-07-21 20:11:38) [GET]
+  Parameters: {"only_path"=>true, "id"=>"user_eats_rabbit"}
+Rendering template within layouts/courgette
+Rendering features/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/features/user_eats_rabbit]
+
+
+Processing FeaturesController#show (for 0.0.0.0 at 2009-07-21 20:12:25) [GET]
+  Parameters: {"id"=>"user_eats_rabbit"}
+Rendering template within layouts/courgette
+Rendering features/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/features/user_eats_rabbit]
+
+
+Processing FeaturesController#show (for 0.0.0.0 at 2009-07-21 20:12:25) [GET]
+  Parameters: {"only_path"=>true, "id"=>"user_eats_rabbit"}
+Rendering template within layouts/courgette
+Rendering features/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/features/user_eats_rabbit]
+
+
+Processing FeaturesController#index (for 0.0.0.0 at 2009-07-21 20:12:25) [GET]
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/features]
+
+
+Processing FeaturesController#index (for 0.0.0.0 at 2009-07-21 20:12:25) [GET]
+  Parameters: {"only_path"=>true}
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/features]
+
+
+Processing FeaturesController#index (for 0.0.0.0 at 2009-07-21 20:12:25) [GET]
+  Parameters: {"only_path"=>true}
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/features]
+REQUESTING PAGE: GET /features with {} and HTTP headers {}
+
+
+Processing FeaturesController#index (for 127.0.0.1 at 2009-07-21 20:31:58) [GET]
+Rendering template within layouts/courgette
+Rendering features/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-21 20:32:03) [GET]
+REQUESTING PAGE: GET /features with {} and HTTP headers {}
+
+
+Processing FeaturesController#index (for 127.0.0.1 at 2009-07-21 20:46:57) [GET]
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 103ms (View: 95, DB: 0) | 200 OK [http://www.example.com/features]
+REQUESTING PAGE: GET /features with {} and HTTP headers {}
+
+
+Processing FeaturesController#index (for 127.0.0.1 at 2009-07-21 20:47:30) [GET]
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 102ms (View: 94, DB: 0) | 200 OK [http://www.example.com/features]
+
+
+Processing FeaturesController#show (for 0.0.0.0 at 2009-07-21 20:47:38) [GET]
+  Parameters: {"id"=>"user_eats_rabbit"}
+Rendering template within layouts/courgette
+Rendering features/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/features/user_eats_rabbit]
+
+
+Processing FeaturesController#show (for 0.0.0.0 at 2009-07-21 20:47:38) [GET]
+  Parameters: {"only_path"=>true, "id"=>"user_eats_rabbit"}
+Rendering template within layouts/courgette
+Rendering features/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/features/user_eats_rabbit]
+
+
+Processing FeaturesController#index (for 0.0.0.0 at 2009-07-21 20:47:38) [GET]
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/features]
+
+
+Processing FeaturesController#index (for 0.0.0.0 at 2009-07-21 20:47:38) [GET]
+  Parameters: {"only_path"=>true}
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/features]
+
+
+Processing FeaturesController#index (for 0.0.0.0 at 2009-07-21 20:47:38) [GET]
+  Parameters: {"only_path"=>true}
+Rendering template within layouts/courgette
+Rendering features/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/features]

@@ -8,7 +8,7 @@ Feature: List features
      
      Then I should see a table with the headers "Name, Scenarios"
      Then I should see a table where a row contains the cells "User eats a Rabbit, 2"
-     Then I should see a table where a row contains the cells "Visitor can transform into a tamagochi, 3"
+     Then I should see a table where a row contains the cells "Visitor can transform into a tamagochi, 1"
   
   
   
