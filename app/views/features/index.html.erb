@@ -1,0 +1,19 @@
+<h1>Features</h1>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Scenarios</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% @features.each do |feature| %>
+      <tr>
+        <td><%= feature.name %></td>
+        <td><%= feature.scenarios.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
