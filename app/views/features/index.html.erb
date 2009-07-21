@@ -1,6 +1,6 @@
 <h1>Features</h1>
 
-<table border="0" cellspacing="0" cellpadding="0">
+<table id="features" border="0" cellspacing="0" cellpadding="0">
   <thead>
     <tr>
       <th>Name</th>
@@ -11,7 +11,7 @@
   <tbody>
     <% @features.each do |feature| %>
       <tr>
-        <td><%= feature.name %></td>
+        <td><%= link_to feature.name, '#' %></td>
         <td><%= feature.feature_elements_size %></td>
       </tr>
     <% end %>

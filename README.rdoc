@@ -1,10 +1,15 @@
 = courgette
 
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/jnicklas/courgette
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Courgette is a Rails engine which makes your feature files viewable through
+your browser. Install and browse to:
+
+    /features
+
+Voilá, pretty list of features. Great for communicating with the customer.
 
 == FEATURES/PROBLEMS:
 
