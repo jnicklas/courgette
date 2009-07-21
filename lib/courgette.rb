@@ -6,7 +6,7 @@ require 'cucumber/feature_file'
 require 'cucumber/formatter/html'
 
 module Courgette
-  VERSION = '0.0.1'
+  VERSION = '0.0.2'
   
   autoload :Feature, 'courgette/feature'
   
