@@ -8,7 +8,7 @@ class FeaturesController < ApplicationController
   end
   
   def show
-    @feature = Courgette.find(params[:id])
+    render :text => Courgette.find(params[:id]).to_html
   end
   
 end

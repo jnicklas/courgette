@@ -6,10 +6,9 @@ describe FeaturesController do
     
   describe :get => :show, :id => 'user_eats_rabbit' do
     before { Courgette.should_receive(:find).with('user_eats_rabbit').and_return(@feature) }
+    before { @feature.should_receive(:to_html).and_return('<html></html>') }
 
-    it { should respond_with(:success) }
-    it { should render_template('features/show') }
-    it { should assign_to(:feature, :with => @feature) }
+    it { should respond_with(:success).body('<html></html>') }
   end
   
   describe :get => :index do    
