@@ -25,8 +25,15 @@ describe Courgette::Feature do
   end
   
   describe '#to_html' do
-    it "should not raise any errors" do
-      lambda { @feature.to_html }.should_not raise_error
+    it "should contain the feature text" do
+      @feature.to_html.should include('In order to get that delicious feeling')
+      @feature.to_html.should include('As a user')
+      @feature.to_html.should include('I want to eat some Rabbits')
+      @feature.to_html.should include('eat a really cute rabbit')
+      @feature.to_html.should include('there is a rabbit')
+      @feature.to_html.should include('the rabbit is really cute')
+      @feature.to_html.should include('eat the rabbit')
+      @feature.to_html.should include('should feel good')
     end
   end
   
