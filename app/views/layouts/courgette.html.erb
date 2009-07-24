@@ -30,38 +30,59 @@
         color: #c63;
       }
       
+      #menu {
+        width: 259px;
+        margin-right: -300px;
+        float: left;
+        margin: 100px 0 10px 40px;
+        list-style: none;
+        padding: 40px 0 60px;
+        border-right: 1px solid #eee;
+      }
+      
+      #menu li a {
+        display: block;
+        padding: 5px 20px;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+      }
+      
+      #menu li a.current {
+        border-left: 5px solid #c63;
+        padding-left: 15px;
+      }
+      
+      #footer {
+        margin: 10px 50px 100px 300px;
+        color: #888;
+      }
+      
       #page {
-        margin: 30px 200px 100px 50px;
+        margin: 30px 50px 10px 300px;
         background: white;
         border-bottom: 3px solid #ccc;
         border-right: 3px solid #ddd;
         padding: 30px 50px 60px;
+        min-height: 600px;
       }
       
       #page h1, #page h2, #page h3 {
         font-weight: normal;
+        font-size: 1em;
       }
       
-      #features {
-        width: 100%;
-        margin: 1em 0 3em;
-      }
-
-      #features th {
-        text-align: left;
-        background: #eee;
-        border-bottom: 4px solid #ccc;
-        padding: 5px 10px;
-      }
-      
-      #features td {
-        border-bottom: 1px solid #ccc;
-        padding: 10px 10px;
+      #page h2 {
+        background: #F4FDFF;
+        font-family: "Museo700","Helvetica Neue",Arial,sans-serif;
+        font-size: 26px;
+        color: #4B96AE;
+        margin: -30px -50px 40px;
+        padding: 20px 50px 0;
+        height: 39px;
+        border-bottom: 1px solid #E3EDEF;
       }
       
       .narrative {
-        border: 1px solid #ddd;
-        padding: 10px;
         color: #888;
         margin: 1em 0;
       }
@@ -70,10 +91,8 @@
         margin: 0 0 1em;
       }
       
-      .scenario, .background {
-        border: 1px solid #ddd;
-        margin: 1em 0;
-        padding: 10px;
+      .scenario, .background, .narrative {
+        margin: 3em 0;
       }
       
       .scenario li, .background li {
@@ -83,12 +102,28 @@
       .keyword {
         color: #DC7D11;
       }
+      
+      li .keyword {
+        float: left;
+        width: 55px;
+        text-align: right;
+        margin-right: 1em;
+      }
     </style>
   </head>
   
   <body>
+    <ul id="menu">
+      <% Courgette.features.each do |feature| %>
+        <li><%= link_to truncate(feature.name, :length => 35), feature_path(feature), :title => feature.name, :class => (feature == @feature) ? 'current' : '' %></li>
+      <% end %>
+    </ul>
     <div id="page">
       <%= yield %>
+    </div>
+    <div id="footer">
+      Powered by <%= link_to 'Courgette', 'http://github.com/jnicklas/courgette' %>,
+      an open cource viewer for <%= link_to 'Cucumber', 'http://cukes.info' %> features.
     </div>
   </body>
 </html>

@@ -37,4 +37,10 @@ describe Courgette::Feature do
     end
   end
   
+  describe '#==' do
+    it "should be equal if it has the same param" do
+      @feature.should == Courgette::Feature.new(Rails.root.join('features/user_eats_rabbits.feature').to_s)
+    end
+  end
+  
 end

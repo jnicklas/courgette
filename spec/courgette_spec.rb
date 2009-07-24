@@ -22,4 +22,10 @@ describe Courgette do
     end
   end
   
+  describe '.first' do
+    it "should return the first feature" do
+      Courgette.first.should == Courgette.features.first
+    end
+  end
+  
 end

@@ -26,6 +26,10 @@ module Courgette
       visitor = Cucumber::Formatter::Html.new(step_mother, nil, {})
       visitor.visit_feature(ast)
     end
+    
+    def ==(other)
+      to_param == other.to_param
+    end
 
   private
 

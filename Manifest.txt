@@ -4,7 +4,6 @@ PostInstall.txt
 README.rdoc
 Rakefile
 app/controllers/features_controller.rb
-app/views/features/index.html.erb
 app/views/features/show.html.erb
 app/views/layouts/courgette.html.erb
 config/routes.rb

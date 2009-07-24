@@ -6,8 +6,7 @@ Feature: List features
   Scenario: list features in the fixture application
     Given I enter the address of the feature page
 
-     Then I should see a table with the headers "Name, Scenarios"
-     Then I should see a table where a row contains the cells "User eats a Rabbit, 2"
+     Then I should see "User eats a Rabbit"
 
      When I follow "User eats a Rabbit"
 

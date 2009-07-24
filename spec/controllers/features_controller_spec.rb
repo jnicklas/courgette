@@ -13,12 +13,11 @@ describe FeaturesController do
   end
   
   describe :get => :index do    
-    before { Rails.stub!(:root).and_return('rails/root') }
-    before { Courgette.should_receive(:features).and_return([@feature]) }
+    before { Courgette.should_receive(:first).and_return(@feature) }
     
     it { should respond_with(:success) }
-    it { should render_template('features/index') }
-    it { should assign_to(:features, :with => [@feature]) }
+    it { should render_template('features/show') }
+    it { should assign_to(:feature, :with => @feature) }
   end
   
 end

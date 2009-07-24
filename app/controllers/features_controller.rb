@@ -4,7 +4,8 @@ class FeaturesController < ApplicationController
   layout "courgette"
   
   def index
-    @features = Courgette.features
+    @feature = Courgette.first
+    render "show"
   end
   
   def show

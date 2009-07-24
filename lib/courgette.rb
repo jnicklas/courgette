@@ -17,6 +17,10 @@ module Courgette
       end
     end
     
+    def first
+      features.first
+    end
+    
     def find(param)
       features.find { |f| f.to_param == param }
     end
@@ -24,6 +28,5 @@ module Courgette
     def feature_root
       Rails.root.join('features').to_s
     end
-
   end
 end
